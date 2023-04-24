@@ -1,10 +1,10 @@
 describe('dashboard', () => {
   beforeEach(() => {
-    cy.visit('localhost:4200/dashboard');
+    cy.visit('https://fir-test-application2.web.app/dashboard');
   });
 
   it(`has title 'Tour of Heroes'`, () => {
-    cy.contains('Tour of Heroes');
+    cy.contains('Tour of Heroes - Created by Vinod');
     cy.get('h1').should('contain', 'Tour of Heroes');
     cy.title().should('eq', 'Tour of Heroes');
   });
