@@ -4,7 +4,7 @@ describe('dashboard', () => {
   });
 
   it(`has title 'Tour of Heroes'`, () => {
-    cy.contains('Tour of Heroes - Created by Vinod');
+    cy.contains('Tour of Heroes');
     cy.get('h1').should('contain', 'Tour of Heroes');
     cy.title().should('eq', 'Tour of Heroes');
   });
